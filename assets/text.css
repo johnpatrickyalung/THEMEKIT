@@ -1,0 +1,66 @@
+span.main-title {
+    font-family: fantasy;
+    font-weight: 400;
+}
+
+span.sub-title {
+    font-size: 19px;
+    font-weight: 800;
+    color: white;
+}
+
+h1.sec-title {
+    font-weight: 400;
+    font-family: fantasy;
+    margin-bottom: 1em;
+  	font-size:25px;
+}
+.desc-con{
+margin-bottom:4em;
+}
+
+.nav-link.active{
+  color:black;
+}
+.nav-link{
+    color:#929292;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+ color:#080808; 
+}
+
+/* third section  */
+#third-con{
+    margin-top:30px;
+}
+
+/* card des */
+.item-description{
+    padding: 1em;
+} 
+h3.item-name {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.discount{
+     display: flex;
+    /* position: absolute; */
+    justify-content: space-between;
+    padding-left: 2em;
+    width: 100%;
+    padding-right: 2em;
+    margin-top:1rem;
+}
+
+.card-box{
+  border: 1px solid #dedede;
+  border-radius: 8px;
+}
+ .banner__box.content-container.content-container--full-width-mobile.color-background-1 {
+    height: 32rem;
+}

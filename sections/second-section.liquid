@@ -1,0 +1,87 @@
+<section id="sec-con">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="con-sec">
+          <h1 class="sec-title">{{section.settings.heading-title}}</h1>
+        </div>
+        <div class="desc-con">
+          <p>{{section.settings.description}} </p>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+   <div class="container">
+       <div class="row">
+           <div class="col-12 text-center">
+            <nav class="nav">
+              <a class="nav-link active" aria-current="page" href="#">{{section.settings.menu1}}</a>
+              <a class="nav-link" href="#">{{section.settings.menu2}}</a>
+              <a class="nav-link" href="#">{{section.settings.menu3}}</a>
+              <a class="nav-link" href="#">{{section.settings.menu4}}</a>
+              
+            </nav>
+            </div>
+       </div>
+    </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Second page",
+    "settings": [
+					{
+						"type": "text",
+						"id":   "heading-title",
+						"label":"Heading title",
+						"default": "Lorem ipsum"
+					},
+                    {
+						"type": "text",
+						"id":   "description",
+						"label":"Heading title",
+						"default": "Lorem ipsum"
+					},
+                     {
+						"type": "text",
+						"id":   "menu1",
+						"label":"Menu 1",
+						"default": "Lorem ipsum"
+					},
+                    {
+						"type": "text",
+						"id":   "menu2",
+						"label":"Menu 2",
+						"default": "Lorem ipsum"
+					},
+                    {
+						"type": "text",
+						"id":   "menu3",
+						"label":"Menu 3",
+						"default": "Lorem ipsum"
+					},
+                    {
+						"type": "text",
+						"id":   "menu4",
+						"label":"Menu 4",
+						"default": "Lorem ipsum"
+					}
+                   
+				],
+	"presets": [
+				{
+					"category": "pages",
+					"name": "second-page"
+				}
+				]
+  }
+{% endschema %}
+
+{% stylesheet %}
+.desc-con{
+
+}
+{% endstylesheet %}
+
