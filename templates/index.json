@@ -75,6 +75,18 @@
         "image4": "shopify:\/\/shop_images\/h1-product-5-600x728.jpg",
         "image4-name": "Lorem ipsum",
         "image4-price": "Lorem ipsum",
+        "image5": "shopify:\/\/shop_images\/h1-product-2-600x728.jpg",
+        "image5-name": "Lorem ipsum",
+        "image5-price": "Lorem ipsum",
+        "image6": "shopify:\/\/shop_images\/h1-product-3-600x728.jpg",
+        "image6-name": "Lorem ipsum",
+        "image6-price": "Lorem ipsum",
+        "image7": "shopify:\/\/shop_images\/h1-product-1-600x728.jpg",
+        "image7-name": "Lorem ipsum",
+        "image7-price": "Lorem ipsum",
+        "image8": "shopify:\/\/shop_images\/h1-product-4-600x728.jpg",
+        "image8-name": "Lorem ipsum",
+        "image8-price": "Lorem ipsum",
         "heading-title": "Lorem ipsum"
       }
     },
@@ -109,6 +121,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "collection": "all",
@@ -126,6 +139,7 @@
     },
     "collage": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "collection-0": {
           "type": "collection",
@@ -163,6 +177,7 @@
     },
     "video": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -175,6 +190,7 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column1": {
           "type": "column",
