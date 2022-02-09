@@ -1,23 +1,18 @@
- {% comment %} <style>
-#secbanner{
-    background-image: url({{ section.settings.secondbanner | image_url: 'master' }});
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    height:5rem;
-}
-</style> {% endcomment %}
 
 <section id="fiftbanner">
     <div>
-        <img loading="lazy" class="image-size" src="{{ section.settings.secondbanner | image_url }}" alt="lore">
+        <img loading="lazy" class="image-size" src="{{ section.settings.secondbanner1 | image_url }}" alt="lore">
         
     </div> 
     <div class="sec-title-banner">
-        <h1 class="secheading" style=" color:{{ section.settings.color_title }};">{{ section.settings.sec-heading-banner }}</h1>
-        <p  class="descheading"  style="color:{{ section.settings.color_desc }};font-size:{{ section.settings.font_size }}px;">{{ section.settings.sec-desc-banner }}</p>
+         <h3 class="secheading" style=" color:{{ section.settings.color_title1 }};">{{ section.settings.sec-heading-banner1 }}</h3>
+        <p  class="descheading"  style="color:{{ section.settings.color_desc1 }};font-size:{{ section.settings.font_size1 }}px;">{{ section.settings.sec-desc-banner1 }}</p>
+        <div class="input-group mb-3 ">
+            <input type="text" class="buttons " placeholder="{{ section.settings.place }}" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-dark bg-dark buttons1" type="button" id="button-addon2">{{ section.settings.linktext1 }}</button>
+          </div>
+     
         
-        <a href="{{ section.settings.link }}" class="buttons">{{ section.settings.linktext }}</a>
     </div>
     
 </section>
@@ -26,63 +21,68 @@
   {
     "name": "fift page",
     "settings": [
-				{
-                    "type" : "image_picker",
-                    "id" : "secondbanner",
-                    "label" : "Banner"
-                },
-                {
-                    "type" : "text",
-                    "id" : "sec-heading-banner",
-                    "label" : "Title",
-                    "default":"lorem ipsum"
-                  
-                },
-                {
-                    "type": "color",
-                    "id": "color_title",
-                    "label": "Heading color",
-                    "default": "#FFFFFF"
-                  },
-                  
-                {
-                    "type" : "textarea",
-                    "id" : "sec-desc-banner",
-                    "label" : "Description",
-                    "default":"lorem ipsum"
-                },
-                {
-                    "type": "range",
-                    "id": "font_size",
-                    "min": 12,
-                    "max": 100,
-                    "step": 1,
-                    "unit": "px",
-                    "label": "Font size",
-                    "default": 16
-                  },
-                {
-                    "type": "color",
-                    "id": "color_desc",
-                    "label": "Heading color",
-                    "default": "#FFFFFF"
-                  }
-                  , {
-                    "id": "link",
-                    "type": "url",
-                    "label": "Button link"
-                  },
-                  {
-                    "id": "linktext",
-                    "type": "text",
-                    "label": "Button text",
-                    "default": "Click Here"
-                  }
+        {
+            "type" : "image_picker",
+            "id" : "secondbanner1",
+            "label" : "Banner"
+        },
+        {
+            "type" : "text",
+            "id" : "sec-heading-banner1",
+            "label" : "Title",
+            "default":"lorem ipsum"
+          
+        },
+        {
+            "type": "color",
+            "id": "color_title1",
+            "label": "Heading color",
+            "default": "#FFFFFF"
+          },
+          
+        {
+            "type" : "textarea",
+            "id" : "sec-desc-banner1",
+            "label" : "Description",
+            "default":"lorem ipsum"
+        },
+        {
+            "type": "range",
+            "id": "font_size1",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size",
+            "default": 16
+          },
+        {
+            "type": "color",
+            "id": "color_desc1",
+            "label": "Heading color",
+            "default": "#FFFFFF"
+          }
+          , {
+            "id": "link1",
+            "type": "url",
+            "label": "Button link"
+          },
+          {
+            "id": "linktext1",
+            "type": "text",
+            "label": "Button text",
+            "default": "Click Here"
+          },{
+            "id": "place",
+            "type": "text",
+            "label": "placeholder",
+            "default": "lorem"
+          }
 				],
 	"presets": [
 				{
-					"category": "sec-banner-pages",
-					"name": "second-banner-page"
+					"category": "pages",
+					"name": "fifth"
 				}
 				]
   }
