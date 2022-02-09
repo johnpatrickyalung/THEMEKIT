@@ -2135,9 +2135,9 @@ input[type='checkbox'] {
   background-color: rgb(var(--color-background));
 }
 
-.header-wrapper--border-bottom {
+/* .header-wrapper--border-bottom {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-}
+} */
 
 .header {
   display: grid;
@@ -2847,9 +2847,7 @@ span.header__active-menu-item {
   
 .icon-search {
 color: white; 
-&:hover {
-    color: red;
-}
+
 }
 
 a#cart-icon-bubble {
@@ -2859,9 +2857,7 @@ a#cart-icon-bubble {
   
 .icon-hamburger {
   color: white !important; 
-  &:hover {
-    color: red;
-  }
+
 }
   svg.icon.icon-close {
     color: white;

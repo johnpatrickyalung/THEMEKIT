@@ -1,0 +1,89 @@
+ {% comment %} <style>
+#secbanner{
+    background-image: url({{ section.settings.secondbanner | image_url: 'master' }});
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:5rem;
+}
+</style> {% endcomment %}
+
+<section id="fiftbanner">
+    <div>
+        <img loading="lazy" class="image-size" src="{{ section.settings.secondbanner | image_url }}" alt="lore">
+        
+    </div> 
+    <div class="sec-title-banner">
+        <h1 class="secheading" style=" color:{{ section.settings.color_title }};">{{ section.settings.sec-heading-banner }}</h1>
+        <p  class="descheading"  style="color:{{ section.settings.color_desc }};font-size:{{ section.settings.font_size }}px;">{{ section.settings.sec-desc-banner }}</p>
+        
+        <a href="{{ section.settings.link }}" class="buttons">{{ section.settings.linktext }}</a>
+    </div>
+    
+</section>
+
+{% schema %}
+  {
+    "name": "fift page",
+    "settings": [
+				{
+                    "type" : "image_picker",
+                    "id" : "secondbanner",
+                    "label" : "Banner"
+                },
+                {
+                    "type" : "text",
+                    "id" : "sec-heading-banner",
+                    "label" : "Title",
+                    "default":"lorem ipsum"
+                  
+                },
+                {
+                    "type": "color",
+                    "id": "color_title",
+                    "label": "Heading color",
+                    "default": "#FFFFFF"
+                  },
+                  
+                {
+                    "type" : "textarea",
+                    "id" : "sec-desc-banner",
+                    "label" : "Description",
+                    "default":"lorem ipsum"
+                },
+                {
+                    "type": "range",
+                    "id": "font_size",
+                    "min": 12,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "px",
+                    "label": "Font size",
+                    "default": 16
+                  },
+                {
+                    "type": "color",
+                    "id": "color_desc",
+                    "label": "Heading color",
+                    "default": "#FFFFFF"
+                  }
+                  , {
+                    "id": "link",
+                    "type": "url",
+                    "label": "Button link"
+                  },
+                  {
+                    "id": "linktext",
+                    "type": "text",
+                    "label": "Button text",
+                    "default": "Click Here"
+                  }
+				],
+	"presets": [
+				{
+					"category": "sec-banner-pages",
+					"name": "second-banner-page"
+				}
+				]
+  }
+{% endschema %}
